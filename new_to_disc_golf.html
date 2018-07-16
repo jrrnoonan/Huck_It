@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>Huck-It Disc Golf</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-light-blue">
+
+<div>    
+<img src="huck_it_header.jpg" alt="Huck It Disc Golf" class="w3-image" width="100%;max-width:1300px">   
+    
+</div>
+
+<div class="w3-bar w3-black">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Home</a>
+        <a href="new_to_disc_golf.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile w3-hide-small">New to Disc Golf?</a>
+        <a href="course.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile w3-hide-small">Course</a>
+        <a href="how_to_get_here.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile w3-hide-small">Getting Here</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile w3-hide-small">About</a>
+     
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+     </div>
+     
+     <div id="mobile_nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+             <a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Home</a>
+             <a href="new_to_disc_golf.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">New to Disc Golf?</a>
+             <a href="course.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Course</a>
+             <a href="how_to_get_here.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Getting Here</a>
+             <a href="about.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">About</a>
+
+
+<script>
+     function myFunction() {
+         var x = document.getElementById("mobile_nav");
+         if (x.className.indexOf("w3-show") == -1) {
+             x.className += " w3-show";
+             } else { 
+                x.className = x.className.replace(" w3-show", "");
+      }
+      }
+</script>         
+       
+     </div>
