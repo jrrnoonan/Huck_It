@@ -2,7 +2,7 @@
 <html>
 <title>Huck-It Disc Golf</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="w3.css">
 <body class="w3-light-blue">
 
 <div>    
@@ -19,91 +19,88 @@
         <a href="about.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile w3-hide-small">About</a>
      
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-     </div>
+</div>
      
-     <div id="mobile_nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+        <div id="mobile_nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
              <a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Home</a>
              <a href="new_to_disc_golf.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">New to Disc Golf?</a>
              <a href="course.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Course</a>
              <a href="how_to_get_here.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Getting Here</a>
              <a href="about.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">About</a>
-       
-     </div>
+        </div>
 
-
-
-<div class="w3-container">
+ <div class="w3-container">
     <h2>Huck It's Course Slideshow</h2>
     <p>Check out our slideshow showcasing Huck It's scorecard, course map, and all 18 holes below.  Slide 1 contains the course map.
-        Slide 2 contains the course scorecard. Slides 2-20 contain a shot of all of Huck-It's 18 holes in order.
+       Slide 2 contains the course scorecard. Slides 2-20 contain a shot of all of Huck-It's 18 holes in order.
     </p>
+            
+ </div>
 
-</div>
+ <div class ="w3-row"</div>
 
-<div class="w3-content">
 
-<div class="w3-card-4 w3-content mySlides w3-amber"  style="width:50%; max-width:600px; height:50%; max-height:600px">
-   <div class="w3-container w3-center">
-       <h2>Huck It Course Map</h2>
-       <img src="map.png" alt="Picture of Huck It course map failed to load" style="width:100%; max-width:500px; height:100%; max-height:400px;">
-       <p>Huck It's Course Map</p>
+    <div class="w3-bar-block black w3-third">
+        <button class="w3-button demo" onclick="currentDiv(1)">Huck It Course Map</button> 
+        <button class="w3-button demo" onclick="currentDiv(2)">Huck It Score Card</button> 
+        <button class="w3-button demo" onclick="currentDiv(3)">Huck It Hole #1</button>
     </div>
-</div>
-       
-<div class="w3-card-4  w3-content mySlides" style="width:50%; max-width:600px; height:50%; max-height:600px">
-    <div class="w3-container w3-center">
-       <h2>Huck It Scorecard</h2>
-       <img src="scorecard.jpg" alt="Picture of score card failed to load" style="width:100%">
-       <p>Huck It scorecard.</p>
-       </div>
-    
-</div>
 
-<div class="w3-card-4  w3-content mySlides" style="width:50%; max-width:600px; height:50%; max-height:600px">
-    <div class="w3-container w3-center">
-       <h2>Hole # 1 - Huck It Hell</h2>
-       <img src="hole_1.jpg" alt="Picture of score card failed to load" style="width:100%">
-       <p>Huck It Hell features a sharp up hill left turn.</p>
-       </div>
-    
-</div>
+ 
 
-<button class="w3-button w3-black w3-display-bottomleft" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-bottomright" onclick="plusDivs(1)">&#10095;</button>
-
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
-<script>
-        function myFunction() {
-            var x = document.getElementById("mobile_nav");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else { 
-                x.className = x.className.replace(" w3-show", "");
+        
+          
+        <div class="w3-card-4 w3-content mySlides w3-amber"  style="width:50%; max-width:600px; height:50%; max-height:600px">
+             <div class="w3-container w3-center">
+                <h2>Huck It Course Map</h2>
+                <img src="map.png" alt="Picture of Huck It course map failed to load" style="width:100%; max-width:500px; height:100%; max-height:400px;">
+                <p>Huck It's Course Map</p>
+             </div>
+        </div>
+                            
+        <div class="w3-card-4  w3-content mySlides" style="width:50%; max-width:600px; height:50%; max-height:600px">
+        
+            <div class="w3-container w3-center">
+                <h2>Huck It Scorecard</h2>
+                <img src="scorecard.jpg" alt="Picture of score card failed to load" style="width:100%">
+                <p>Huck It scorecard.</p>
+            </div>                    
+             
+        </div>
+          
+          <div class="w3-center">
+            <div class="w3-section">
+              <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+              <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+            </div>
+            
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
             }
-        }
-        </script>
-
-</div>
-
-
-
+            for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" w3-red", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-red";
+          }
+          </script>
