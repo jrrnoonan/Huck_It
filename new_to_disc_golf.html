@@ -2,13 +2,14 @@
 <html>
 <title>Huck-It Disc Golf</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body class="w3-light-blue">
+<link rel="stylesheet" href="w3.css">
+<body class="w3-black">
 
 <div>    
 <img src="huck_it_header.jpg" alt="Huck It Disc Golf" class="w3-image" width="100%;max-width:1300px">   
     
 </div>
+
 
 <div class="w3-bar w3-black">
         <a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Home</a>
@@ -18,25 +19,41 @@
         <a href="about.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile w3-hide-small">About</a>
      
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-     </div>
+</div>
      
-     <div id="mobile_nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+        <div id="mobile_nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
              <a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Home</a>
              <a href="new_to_disc_golf.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">New to Disc Golf?</a>
              <a href="course.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Course</a>
              <a href="how_to_get_here.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">Getting Here</a>
              <a href="about.html" class="w3-bar-item w3-button w3-padding-16 w3-mobile">About</a>
+        </div>
 
+<div class="w3-row-padding">
 
-<script>
-     function myFunction() {
-         var x = document.getElementById("mobile_nav");
-         if (x.className.indexOf("w3-show") == -1) {
-             x.className += " w3-show";
-             } else { 
-                x.className = x.className.replace(" w3-show", "");
-      }
-      }
-</script>         
-       
-     </div>
+    
+    <div class="w3-card-4 w3-sand w3-third w3-margin">
+        <h3>What is disc Golf?</h3>
+        <img src="disc_golf_tee_off_pad.jpg" alt="Picture of man throwing disc off a tee off pad failed to load." style="width:90%">
+        <p>Disc golf is very similar to tradiational golf, except players throw a disc (or frisbee) instead of hitting a ball with a club. 
+            Each hole begins with a tee off pad.
+        </p>
+
+    </div>
+
+        <div class="w3-card-4 w3-amber w3-third w3-margin">
+            <h3>Disc Golf Basket</h3> 
+          <img src="disc_golf_basket.jpg" alt="Picture of the Disc Golf basket failed to load." style="width:90%">
+          <p>Instead of a hole, disc golf has baskets that the disc must land in. Hitting the chains above the basket is usually 
+              suffice to get the disc to drop in the basket.
+          </p>
+        </div>  
+
+        <div class="w3-card-4 w3-khaki w3-rest w3-margin">
+                <h3>How Do I Get Started</h3>
+              <img src="huck_it_logo.jpg" alt="Picture of the Disc Golf basket failed to load." style="width:90%">
+              <p>Stop by Huck It Disc golf at 1525 Newton Rd. Middleton, PEI. No need to book a tee off time, simply walk on and play.
+                  Admission is $10. Disc rentals is $5. 
+              </p>
+        </div> 
+</div>
