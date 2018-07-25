@@ -33,10 +33,10 @@
 <h2 class="w3-center">New to Disc Golf?</h2>
 
 
-<div class="w3-row">
+<div class="w3-row w3-hide-medium w3-hide-small">
+ 
 
-
-    <div class=" w3-card-4 mySlides w3-content w3-theme-l3" style="width:33%">
+    <div class=" w3-card-4 mySlides1 w3-content w3-theme-l3" style="width:33%">
         <h3 class="w3-center">What is disc Golf?</h3>
         <div class="w3-center"> 
             <img src="disc_golf_tee_off_pad.jpg" alt="Picture of man throwing disc off a tee off pad failed to load."
@@ -49,7 +49,7 @@
      </div>
            
 
-    <div class="w3-card-4 mySlides w3-content w3-theme-l3" style="width:33%">
+    <div class="w3-card-4 mySlides1 w3-content w3-theme-l3" style="width:33%">
         <h3 class="w3-center">Disc Golf Basket</h3> 
          <div class="w3-center">
             <img src="disc_golf_basket.jpg" alt="Picture of the Disc Golf basket failed to load." 
@@ -60,7 +60,7 @@
             </p>
     </div>  
                 
-    <div class="w3-card-4 mySlides w3-content w3-theme-l3" style="width:33%">
+    <div class="w3-card-4 mySlides1 w3-content w3-theme-l3" style="width:33%">
         <h3>How Do I Get Started</h3>
         <div class="w3-center">
             <img src="huck_it_logo.jpg" alt="Picture of the Disc Golf basket failed to load." 
@@ -73,32 +73,80 @@
 
     
         <div class="w3-center">     
-            <button class="w3-button w3-black" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black" onclick="plusDivs(1)">&#10095;</button>
+            <button class="w3-button w3-black" onclick="plusDivs(-1,0)">&#10094;</button>
+            <button class="w3-button w3-black" onclick="plusDivs(1,0)">&#10095;</button>
+        </div>   
+</div> 
+
+ 
+<div class="w3-row w3-hide-large">
+ 
+
+    <div class=" w3-card-4 mySlides2 w3-content w3-theme-l3" style="width:66%">
+        <h3 class="w3-center">What is disc Golf?</h3>
+        <div class="w3-center"> 
+            <img src="disc_golf_tee_off_pad.jpg" alt="Picture of man throwing disc off a tee off pad failed to load."
+            style="width:90%; max-width:400px; height:90%; max-height:300px"> 
+        </div>
+        <p>Disc golf is very similar to tradiational golf, except players throw a disc (or frisbee) instead of hitting a ball with a club. 
+            Each hole begins with a tee off pad.
+        </p>
+                
+     </div>
+           
+
+    <div class="w3-card-4 mySlides2 w3-content w3-theme-l3" style="width:66%">
+        <h3 class="w3-center">Disc Golf Basket</h3> 
+         <div class="w3-center">
+            <img src="disc_golf_basket.jpg" alt="Picture of the Disc Golf basket failed to load." 
+            style="width:90%; max-width:400px; height:90%; max-height:300px">
+         </div>
+            <p>Instead of a hole, disc golf has baskets that the disc must land in. Hitting the chains above the basket is usually 
+             suffice to get the disc to drop in the basket.
+            </p>
+    </div>  
+                
+    <div class="w3-card-4 mySlides2 w3-content w3-theme-l3" style="width:66%">
+        <h3>How Do I Get Started</h3>
+        <div class="w3-center">
+            <img src="huck_it_logo.jpg" alt="Picture of the Disc Golf basket failed to load." 
+            style="width:90%; max-width:400px; height:90%; max-height:300px"> 
+        </div>      
+        <p>Stop by Huck It Disc golf at 1525 Newton Rd. Middleton, PEI. No need to book a tee off time, simply walk on and play.
+          Admission is $10. Disc rentals is $5. 
+        </p>
+    </div> 
+
+    
+        <div class="w3-center">     
+            <button class="w3-button w3-black" onclick="plusDivs(-1,1)">&#10094;</button>
+            <button class="w3-button w3-black" onclick="plusDivs(1,1)">&#10095;</button>
         </div>   
  </div> 
 
-
-        
-        <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-        </script>
+         
+ <script>
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showDivs(1, 0);
+    showDivs(1, 1);
+    
+    function plusDivs(n, no) {
+      showDivs(slideIndex[no] += n, no);
+    }
+    
+    function showDivs(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
+    
 
 
 <h2>Check out the instructional video below for tips on how to properly throw a disc golf disc</h2>
