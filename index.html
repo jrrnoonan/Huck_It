@@ -4,10 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="w3-theme-red.css">
-<body class="w3-theme-l4">
+<body class="w3-aqua">
 
 <div>
-<img src="huck_it_header.jpg" alt="Huck It Disc Golf" class="w3-image" width="100%;max-width:1300px">   
+<img src="huck_it_header_2.png" alt="Huck It Disc Golf" class="w3-image" width="100%;max-width:1300px">   
     
 </div>
 
@@ -32,28 +32,79 @@
   
 </div>
 
+<div class="w3-panel w3-border w3-quarter w3-hide-small">
+    <div class="w3-card-4 w3-theme-l4">
+        <h3><a href="https://www.udisc.com">U-Disc - The #1 Disc Golf App</a></h3>
+      <img src="huck_it_logo_2.jpg" alt="Picture of U-Disc failed to load." style="width:90%">
+            <ul class="w3-ul w3-small">
+                <li>Measure drive distance, distance to the basket</li>
+                <li>Keep track of your scores and stats</li>
+                <li>Discover New Courses (over 8000 registered courses)</li>
+                <li>Compatiable on <a href="https://itunes.apple.com/us/app/udisc-disc-golf/id1072228953">Iphone</a> 
+                and <a href ="https://play.google.com/store/apps/details?id=com.regasoftware.udisc">Android.</a></li>
+            </ul>
+
+    </div>
+
+        <div class="w3-card-4 w3-theme-l3">
+            <h3>Huck It Social Media</h3>
+          <img src="huck_it_logo.jpg" alt="Picture of Huck It Logo failed to load." style="width:90%">
+            <ul>
+                <li><a href = "https://www.instagram.com/huckitdiscgolf/">Huck It Instagram</a></li>
+                <li><a href = "https://www.facebook.com/Huck-it-middleton-disc-golf-863831317099936//">Huck It Facebook</a></li>
+            </ul>
+        </div>  
+
+        <div class="w3-card-4 w3-theme-l2">
+                <h3>Aerial Shot of Course</h3>
+              <img src="huck_it_aerial.jpg" alt="Picture of the Disc Golf basket failed to load." style="width:90%">
+              <p>Stop by Huck It Disc golf at 1525 Newton Rd. Middleton, PEI. No need to book a tee off time, simply walk on and play.
+                  Admission is $10. Disc rentals is $2. 
+              </p>
+            </div>  
+</div>
 
 
-<div class="w3-panel w3-threequarter">
+<div class="w3-panel w3-half">
    
-    <div class="w3-card-4 w3-theme-l2">
-        <div class="w3-container w3-center w3-cell">
+    <div class="w3-card-4 w3-theme-l2 mySlides1">
+     
            
-            <h3>Hole #6 - Huck It Hell</h3>
+            <h3>U-Disc - The #1 Disc Golf App</h3>
           
             <img src="hole_1.jpg" alt="The picture of hole #1 failed to load"
            style="width:100%; max-width: 1024px; height:100%; max-height: 400px;">
         
            <h5>Huck It's flagship hole, containing a long straight with a dog leg left</h5>
-        </div>
-   
     </div>
+
+    <div class="w3-card-4 w3-theme-l2 mySlides1">   
+                   
+            <h3>Hole #6 - Huck It Hell</h3>
+          
+            <img src="the_approach.jpg" alt="The picture of hole #1 failed to load"
+           style="width:100%; max-width: 1024px; height:100%; max-height: 400px;">
+        
+           <h5>Huck It's flagship hole, containing a long straight with a dog leg left</h5>
+        
+    </div>
+
+    <div class="w3-center">     
+        <button class="w3-button w3-black" onclick="plusDivs(-1,1)">&#10094;</button>
+        <button class="w3-button w3-black" onclick="plusDivs(1,1)">&#10095;</button>
+    </div> 
+
+   
+    
 
     <div class="w3-card-4 w3-section">
         
         <div class="w3-container w3-theme-l3">
         <h3 class="w3-theme-l3">Huck It Disc Golf - Officially Open to the Public</h3>
         </div>
+
+          
+    
         
         <div class= "w3-container w3-theme-l5">
 
@@ -64,7 +115,8 @@
         
     </div>
 
-    <div class="w3-card-4 w3-section">
+    
+       <div class="w3-card-4 w3-section">
         
             <div class="w3-container w3-theme-l2">
             <h5>Canadian National Disc Golf Championship - September 10-16, 2018.</h5>
@@ -135,6 +187,7 @@
              <ul class="w3-ul w3-small">
             <li>Located at <a href= "how_to_get_here.html">1525 Newton Rd., Middleton, PE</a></li>
             <li>$10 Admission. $2 Disc Rental.</li>
+            <li>No need for tee off time, simply walk on</li>
             <li>Pay at cash box at clubhouse. Cash only</li>
             <li>New Players should check out out our <a href= "new_to_disc_golf.html">beginners guide</a></li>
         </ul>
@@ -167,7 +220,31 @@
             x.className = x.className.replace(" w3-show", "");
         }
     }
+</script>
+
+<script>
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showDivs(1, 0);
+    showDivs(1, 1);
+    
+    function plusDivs(n, no) {
+      showDivs(slideIndex[no] += n, no);
+    }
+    
+    function showDivs(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
     </script>
+
+
        
 </body>
 </html> 
