@@ -1,7 +1,7 @@
  <?php
  
 //Define your host here.
-$HostName = "192.168.137.1";
+$HostName = "localhost";
  
 //Define your database name here.
 $DatabaseName = "products";
