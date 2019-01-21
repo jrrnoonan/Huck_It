@@ -10,6 +10,6 @@ $DatabaseName = "products";
 $HostUser = "root";
  
 //Define your database password here.
-$HostPass = "TRx@%)375";
+$HostPass = "";
  
 ?>
