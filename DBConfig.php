@@ -7,9 +7,9 @@ $HostName = "localhost";
 $DatabaseName = "products";
  
 //Define your database username here.
-$HostUser = "root";
+$HostUser = "newuser";
  
 //Define your database password here.
-$HostPass = "";
+$HostPass = "TRx@%)375";
  
 ?>
